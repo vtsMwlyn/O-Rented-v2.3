@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInPage"
+    android:background="@color/dark_grey">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_grey"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:text="Please enter your email address and your unique password in the box field below"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_grey"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_bottomnav2"
+        android:padding="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/inp_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="14sp"
+            android:hint="Email address / username"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="@color/dark_grey"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_input"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/inp_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="14sp"
+            android:hint="Password"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="@color/dark_grey"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_input"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textStyle="bold"
+            android:textColor="@color/dark_grey"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Sign In"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/dark_grey"
+            android:textColor="@color/light_grey"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:background="@color/dark_grey">
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_grey"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:background="@color/dark_grey">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Continue with Google"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/dark_grey"
+            android:textColor="@color/light_grey"
+            android:drawableLeft="@drawable/baseline_catching_pokemon_24"
+            android:drawableRight="@drawable/baseline_arrow_forward_24"
+            android:letterSpacing="0.005"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Continue with Phone Number"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/dark_grey"
+            android:textColor="@color/light_grey"
+            android:drawableLeft="@drawable/baseline_phone_android_24"
+            android:drawableRight="@drawable/baseline_arrow_forward_24"
+            android:letterSpacing="0.005"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

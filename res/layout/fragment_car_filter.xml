@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CarFilterFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_grey"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Filter"
+        android:textColor="@color/dark_grey"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Cars"
+        android:textColor="@color/dark_grey"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="-10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_layout2"
+        android:layout_marginTop="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/car_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/baseline_directions_car_24_2"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_layout"
+            android:padding="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car Attributes"
+                android:textColor="@color/light_grey"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/car_manufacturer"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Car Manufacturer/Brand"
+                android:drawableLeft="@drawable/baseline_factory_24"
+                android:background="@drawable/rounded_input3"
+                android:paddingLeft="10dp"
+                android:textColor="@color/dark_grey"
+                android:textColorHint="@color/dark_grey"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/number_of_seats"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Number of Seats"
+                android:drawableLeft="@drawable/baseline_chair_24_2"
+                android:background="@drawable/rounded_input3"
+                android:paddingLeft="10dp"
+                android:textColor="@color/dark_grey"
+                android:textColorHint="@color/dark_grey"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/car_control_type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Car Control Type"
+                android:drawableLeft="@drawable/baseline_settings_suggest_24_2"
+                android:background="@drawable/rounded_input3"
+                android:paddingLeft="10dp"
+                android:textColor="@color/dark_grey"
+                android:textColorHint="@color/dark_grey"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car Rent Price Interval"
+                android:textColor="@color/light_grey"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/lowest_price"
+                    android:layout_weight="10"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:hint="Lowest Price"
+                    android:drawableLeft="@drawable/baseline_payment_24"
+                    android:background="@drawable/rounded_input3"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/dark_grey"
+                    android:textColorHint="@color/dark_grey"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp">
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/highest_price"
+                    android:layout_weight="10"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:hint="Highest Price"
+                    android:drawableLeft="@drawable/baseline_payment_24"
+                    android:background="@drawable/rounded_input3"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/dark_grey"
+                    android:textColorHint="@color/dark_grey"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/apply_filter_button"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:text="Apply Filter"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:letterSpacing="0.0005"
+                    android:backgroundTint="@color/light_grey"
+                    android:textColor="@color/dark_grey"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/default_filter_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Default Filter"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:letterSpacing="0.0005"
+                    android:backgroundTint="@color/light_grey"
+                    android:textColor="@color/dark_grey"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

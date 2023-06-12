@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="240dp"
+    android:layout_height="330dp"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_layout"
+        android:padding="15dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/car_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car Name"
+            android:textColor="@color/light_grey"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/car_image"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/baseline_directions_car_24"
+                android:background="@drawable/rounded_layout"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/rent_car_button"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Rent Now"
+            android:textColor="@color/dark_grey"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:letterSpacing="0.005"
+            android:backgroundTint="@color/light_grey"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".WelcomePage">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O'"
+            android:textSize="140sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_grey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rented"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_grey"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:text="Car Rental App"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_grey"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-25dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title2"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_bottomnav"
+        android:padding="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="180dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, User..."
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_grey"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to our car rental app! To get started, you'll need to create an account. Click on the 'Sign In' button and then if you want to create account select 'Sign Up' button"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_grey"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:letterSpacing="0.0005"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/dark_grey"/>
+
+            <Button
+                android:id="@+id/sign_up_button"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:letterSpacing="0.0005"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/dark_grey"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
