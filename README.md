@@ -14,7 +14,7 @@ Kalo kode-kode xml masuk ke ...\src\main\res\layout\
 
 Kode-kode design lainnya ada di ...\src\main\res\drawable\
 
-#New features
+# New features
 Implemented SQLite Database
 Schedule History
 Car Filtering
