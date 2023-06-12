@@ -7,6 +7,7 @@ biar nanti bisa kebaca sama Android Studionya, thanks :3
 
 - Contoh:
   C:\Users\mycomp\ORented\app\src\main\[nanti harusnya src dan seterusnya ada di sini]
+  
   Kode-kode java masuk ke ...\src\main\java\com\example\orented\
   Kalo kode-kode xml masuk ke ...\src\main\res\layout\
   Kode-kode design lainnya ada di ...\src\main\res\drawable\
